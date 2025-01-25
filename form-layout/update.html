@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="../css/create.css">
+</head>
+<body>
+    <div class="form-container2">
+        <form action="#">
+            <div class="input input1">
+                <label for="date">Time</label>
+                <div class="input-sub">                 
+                    <input type="date" id="date" name="date" required>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                
+            </div>
+            <div class="input input2">
+                <label for="capacity">Capacity</label>
+                <div class="input-sub">
+                    <input type="text" id="capacity" name="capacity" required placeholder="Capacity">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                
+            </div>
+            <div class="input input2">
+                <label for="Description">Description</label>
+                <div class="input-sub">
+                    <textarea name="description" id="description" cols="40" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="input input2">
+                <label for="address">Address</label>
+                <div class="input-sub">
+                    <input type="text" id="address" name="address" required placeholder="Address">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+            <div class="error-result js-error-result">
+
+            </div>
+            <div class="input-create-btn">
+                <button type="button" class="create-btn js-create-btn">
+                    Create
+                </button>
+            </div>
+            
+        </form>
+    </div>
+    <script type="module" src="../js/update.js"></script>
+    <script src="https://kit.fontawesome.com/c5f1dc3da2.js" crossorigin="anonymous"></script>
+</body>
+</html>

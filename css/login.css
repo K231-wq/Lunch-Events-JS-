@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.wholeContainer{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(2 , 400px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: rgb(114, 114, 114, 0.4);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    
+}
+.container1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    border-right: 2px solid grey;
+}
+.container1 > .imgContainer{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    
+}
+.imgContainer > img{
+    width: 100%;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease-in-out;
+}
+.imgContainer > img:hover{
+    box-shadow: 0px 0px 20px 10px rgb(56, 56, 56);
+}
+.container1 > .title{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container2 > .iconContainer{
+    width: 100px;
+    height: 130px;
+}
+.iconContainer > img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 10px whitesmoke;
+}
+.container2 > .formContainer{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.formContainer > h3{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.formContainer > input{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.formContainer > input::placeholder{
+    color: black;
+}
+.formContainer > .result-area{
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    row-gap: 4px;
+}
+.formContainer > button{
+    margin-top: 10px;
+    width: 80px;
+    height: auto;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(39, 208, 39, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formContainer > button:hover{
+    background-color: rgb(28, 146, 28, 0.6);
+}
+
+.footerContainer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 20px;
+    padding-left: 12px;
+    letter-spacing: 0.8px;
+}
+.register-link{
+    color: rgb(27, 165, 27);
+}
+.register-link:hover{
+    color: blue;
+}
+
+.passed{
+    color: rgb(8, 202, 82);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.not_passed{
+    color: red;
+}
